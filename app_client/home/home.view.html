@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 list-group-item" ng-repeat="blog in vm.data.blogs">
+          <h4>
+            <a href="#/blog/{{ blog._id }}">{{ blog.nombre }}</a>
+          </h4>
+          <p class="address">{{ blog.autor }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <p class="lead">{{ vm.sidebar.content }}</p>
+    </div>
+  </div>
+</div>
